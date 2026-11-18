@@ -84,7 +84,110 @@ const comments = [
   { text: 'Nice Nice Nice!', id: 542328 },
 ];
 
-const newArr = inventors.filter((year)=> {
-    return inventors.year >= 1500 && inventors.year <= 1599
-})
-console.log(newArr)
+// Exercise 1
+// const veryOldInventors  = inventors.filter((year)=> {
+//     return inventors.year >= 1500 && inventors.year <= 1599;
+// })
+
+// console.log('Exercise 1 my result: ', veryOldInventors);
+// console.log('Exercise 1 correct result: ', [
+//   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+//   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+// ]);
+
+//Exercise 2 
+// let veryOldInventors = inventors.map((inventor)=> {
+//   return {
+//     first: inventor.first , 
+//     last : inventor.last
+//   }
+// })
+// console.log('Exercise 2 my result: ', + veryOldInventors);
+// console.log('Exercise 2 correct result: ', [
+//   { first: 'Albert', last: 'Einstein' },
+//   { first: 'Isaac', last: 'Newton' },
+//   { first: 'Galileo', last: 'Galilei' },
+//   { first: 'Marie', last: 'Curie' },
+//   { first: 'Johannes', last: 'Kepler' },
+//   { first: 'Nicolaus', last: 'Copernicus' },
+//   { first: 'Max', last: 'Planck' },
+//   { first: 'Katherine', last: 'Blodgett' },
+//   { first: 'Ada', last: 'Lovelace' },
+//   { first: 'Sarah E.', last: 'Goode' },
+//   { first: 'Lise', last: 'Meitner' },
+//   { first: 'Hanna', last: 'Hammarström' },
+// ]);
+
+//Exercise 3 
+
+// let sortedByBirthYear = inventors.sort((a, b) => a.year - b.year);
+// console.log('Exercise 3 my result: ', sortedByBirthYear);
+// console.log('Exercise 3 correct result: ', [
+//   { first: 'Nicolaus', last: 'Copernicus', year: 1473, passed: 1543 },
+//   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+//   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+//   { first: 'Isaac', last: 'Newton', year: 1643, passed: 1727 },
+//   { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 },
+//   { first: 'Hanna', last: 'Hammarström', year: 1829, passed: 1909 },
+//   { first: 'Sarah E.', last: 'Goode', year: 1855, passed: 1905 },
+//   { first: 'Max', last: 'Planck', year: 1858, passed: 1947 },
+//   { first: 'Marie', last: 'Curie', year: 1867, passed: 1934 },
+//   { first: 'Lise', last: 'Meitner', year: 1878, passed: 1968 },
+//   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
+//   { first: 'Katherine', last: 'Blodgett', year: 1898, passed: 1979 },
+// ]);
+
+// Exercise 4 
+// let inventorNamedAda = {};
+
+// inventorNamedAda = inventors.find((inventor) => inventor.first === 'Ada');
+
+
+// console.log('Exercise 4 my result: ', inventorNamedAda);
+// console.log('Exercise 4 correct result: ', {
+//   first: 'Ada',
+//   last: 'Lovelace',
+//   year: 1815,
+//   passed: 1852,
+// });
+
+// Exercise 5
+// let firstLast = [];
+
+
+// firstLast = people.map((person) => {
+//   const name = person.split(', ');
+//   return `${name[1]} ${name[0]}`;
+// });
+
+
+// console.log('Exercise 5 my result: ', firstLast);
+
+//Exercise 6 
+//  let isAdultPresent = null;
+
+// isAdultPresent = devs.some((dev) => dev.year <= 2008);
+
+
+// console.log('Exercise 6 my result: ', isAdultPresent);
+//   // Exercise 7 
+// let isEveryone19OrOlder = null;
+
+
+// isEveryone19OrOlder = devs.every((dev) => dev.year <= 2007);
+
+// console.log('Exercise 7 my result: ', isEveryone19OrOlder);
+
+//Exercise 8 
+
+// let commentById = {}
+
+// commentById = comments.find((comment) => comment.id === 823423)
+
+// console.log('Exercise 8 my result: ', commentById)
+
+//Exercise 9 
+// let idx = null
+
+// idx = comments.findIndex((comment) => comment.id === 123523)
+// console.log('Exercise 9 my result: ', idx)
